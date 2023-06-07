@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/covoiturage.css">
+    <link rel="shortcut icon" href="../img/logo/ldlc.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <title>Covoiturage</title>
+</head>
+<body>
+    <header>
+        <div id="accueil">
+            <a href="./accueil.html"><img src="../img/logo/ldlc_logo.png" alt="ldlc"></a>
+        </div>
+        <div id="covoiturage">
+            <a id="hover" class="texte" href="./covoiturage.html">Ajouter un covoiturage</a>
+        </div>
+        <div id="location">
+            <a id="hover" class="texte" href="./location.html">Ajouter une location</a>
+        </div>
+        <div id="événements">
+            <a id="hover" class="texte" href="./événements.html">Planning des événements</a>
+        </div>
+        <div id="informations">
+            <a id="hover" class="texte" href="./informations.html">Informations</a>
+        </div>
+        <div id="compte">
+            <a id="hover" href="./compte.html"><img src="../img/icons/account_circle.png" alt="ldlc"></a>
+        </div>
+    </header>
+    <h1 style="text-align: center;">Covoiturage</h1>
+    <form>
+        <div>
+            <input type="radio" name="choix_trajet" id="aller" checked>
+            <label for="aller">Trajet aller (D'un lieu jusqu'à l'entreprise)</label>
+            <br><br>
+            <input type="radio" name="choix_trajet" id="retour">
+            <label for="retour">Trajet retour (De l'entreprise jusqu'à un lieu)</label>
+        </div>
+        <div>
+            <label for="identifiant">Votre Nom et Prénom</label>
+            <br><br>
+            <textarea name="identifiant" id="identifiant" rows="10" cols="50" required></textarea>
+        </div>
+        <div>
+            <input type="radio" name="type" id="covoiturage" checked>
+            <label for="covoiturage">Covoiturage classique (Le covoiturage utilise votre véhicule personnel)</label>
+            <br><br>
+            <input type="radio" name="type" id="autopartage">
+            <label for="autopartage">Autopartage (Le covoiturage utilise un véhicule de l'entreprise)</label>
+            <br><br>
+            <label for="desc_voiture">Description de la voiture</label><br>
+            <textarea name="identifiant" id="desc_voiture" rows="10" cols="50" required></textarea>
+        </div>
+        <div>
+            <label for="date">Jour du trajet</label> <br>
+            <input type="date" name="date" id="date" required>
+            <br><br>
+            <label for="heure">Heure de rendez-vous</label> <br>
+            <input type="time" name="heure" id="heure" value="08:30" min="06:00" max="20:00">
+            <br><br>
+            <label for="lieu">Lieu de rendez-vous</label> <br>
+            <textarea name="lieu" id="lieu" cols="50" rows="2" required></textarea>
+        </div>
+            <input type="submit" value="Publier">
+    </form>
+    <footer>
+        <div id="top">
+            <p><a href="./conditionsdutilisation.html">Nos conditions d'utilisations</a> et les informations sur la <a href="./donnees.html">protection de vos données personelles</a></p>
+        </div>
+    </footer>
+</body>
+</html>

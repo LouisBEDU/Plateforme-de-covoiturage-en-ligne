@@ -1,0 +1,134 @@
+:root {
+    --couleur-principal: #0a3782;
+    --couleur-secondaire: #001e69;
+    --couleur-font: white;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Bold.ttf');
+}
+
+* {
+    font-family: Montserrat;
+    transition: 0.3s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #F0F0F0;
+}
+
+header {
+    background: var(--couleur-principal);
+    border-bottom: 15px solid var(--couleur-secondaire);
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header a#hover {
+    opacity: 75%;
+}
+
+header a#hover:hover {
+    opacity: 100%;
+}
+
+header a.texte {
+    text-decoration: none;
+    color: white;
+    border: 0 solid;
+}
+
+.menu {
+    background: #0a378266;
+    transform: translate(-50%,-50%);
+    border-radius: 25px;
+    height: 500px;
+    width: 400px;
+    margin: 400px 50% 0px 50%;
+}
+
+.menu::before {
+    background: #0a378266;
+    transform: rotate(-7deg);
+    border-radius: 25px;
+    position: absolute;
+    content: '';
+    z-index: -1;
+    inset: 0;
+}
+
+.menu > #text {
+    color: #ffffffbf;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 150%;
+    margin-top: 10%;
+    display: flex;
+}
+
+.menu > #text > form > input {
+    background: #0a378266;
+    color: #ffffffbf;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+    padding: 5%;
+    margin: 5%;
+    width: 61%;
+}
+
+.menu > #text > form > input::placeholder {
+    color: #ffffff66;
+}
+
+.menu > #text > form > button {
+    background: #0a378266;
+    color: #ffffffbf;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+    padding: 5%;
+    margin: 5%;
+    width: 61%;
+}
+
+.menu > #text > form > button:hover {
+    cursor: pointer;
+}
+
+.menu > #text > form > button:active {
+    background: #0a378294;
+}
+
+.menu > #text > form > input:focus {
+    background: #0a378294;
+}
+
+footer #top {
+    background-color: var(--couleur-principal);
+    color: #ffffffbf;
+    padding: 50px 100px;
+    text-align: center;
+}
+
+footer #top a {
+    color: #ffffffbf;
+}
+
+footer #top a:hover {
+    color: #ffffff;
+}
